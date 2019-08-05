@@ -1,11 +1,9 @@
-# Touch Designer Git Asset Manager (WIP)
-<hr>
+# Touch Designer Git Asset Manager
+![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)
 
--> Turn a selection of Touch Designer ops into a tracked component.
-
--> Automatically created local git repos for each component.
-
--> Push/Pull to github from Touch Designer
+- Turn a selection of Touch Designer ops into a tracked component
+- Automatically created local git repos for each component
+- Push/Pull to github from Touch Designer
 
 Built with [Touch Designer](https://www.derivative.ca/), [GitPython](https://github.com/gitpython-developers/GitPython).
 
@@ -16,7 +14,7 @@ TDGam is intended to address the need for proper asset management on a large sca
   <img src="media/component.gif">
 </p>
 
-Once a component has be created from a selection of ops, a folder and git repo is created in the same directory as the .toe file. This folder is where all assets used for that component are stored.
+Once a component has be created from a selection of ops, a local folder is created containing a `.json` and git repo in the same directory as the `.toe` file. This folder is where all assets used for that component are stored.
 
 <p align="center">
   <img src="media/stash_json.gif">
@@ -64,11 +62,11 @@ View a list of the original Ops making up this component(future op-management fe
 
 #### TDGam-menu
 - **[Stash]** Save all contained ops' pars, then destroy all ops.
-- **[Rebuiuld]** Rebuild original selection from Component's json data.
+- **[Rebuiuld]** Rebuild original selection from Component's `.json` data.
 - **[Dock]** Dock ops to the placeholder.
-- **[Export Json]** Export selection-data as json.
+- **[Export Json]** Export selection-data as `.json`.
 - **[Export tableDAT]** Export tableDAT containing selection-data.
-- **[Import from Json]** Create component from a json.
+- **[Import from Json]** Create component from a `.json`.
 - **[Import from tableDAT]** Create component from a tableDAT.
 - **[Import from Remote Repo]** Create component from a remote repo.
 - **[Expand]** Rebuild the original selection, then delete the placeholder object.
@@ -135,8 +133,8 @@ Main goals of Magla:
 ```
 This should expose the tdgam module for importing within Touch Designer. For development it is recommended to instead use a hardlink or symlink to a local development directory.
 
-#### Back up and replace default 'menu.tox'
-TDGam is implemented within touch designer as a modification to the main UI. In order to make this modification you must first back up the original menu.tox and then copy the one included with this repo. **Please be cautious with this step and don't forget to back up your existing mainmenu.tox.**
+#### Back up and replace default `menu.tox`
+TDGam is implemented within touch designer as a modification to the main UI. In order to make this modification you must first back up the original menu.tox and then copy the one included with this repo. **Please be cautious with this step and don't forget to back up your existing `mainmenu.tox.`**
 
 1. rename the menu.tox:
 ```
