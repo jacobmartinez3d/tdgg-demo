@@ -58,7 +58,6 @@ View a list of the original Ops making up this component(future op-management fe
 
 <img src="media/ops.png">
 
-<hr>
 
 #### TDGam-menu
 - **[Stash]** Save all contained ops' pars, then destroy all ops.
@@ -73,7 +72,6 @@ View a list of the original Ops making up this component(future op-management fe
 
 <img src="media/tdgam_menu.png">
 
-<hr>
 
 #### Git-menu
 - **[Commit]** Commit current staging area.
@@ -87,7 +85,6 @@ View a list of the original Ops making up this component(future op-management fe
 
 <img src="media/git_menu.png">
 
-<hr>
 
 #### MagLa Path tokening system
 Included with this project is a slightly modified version of MagLa's path token system, which will eventually be its own shared library. The goal of using path tokens is for compatibility across platforms, primarily between Linux-Windows. Simultaneous operability with native Windows cmd-prompt + Windows Linux Subsystem will also be supported.
@@ -102,8 +99,6 @@ The Path module is located at:
 ```
 <magla_repo>/lib/maglapath.py
 ```
-
-<hr>
 
 #### TDGam + MagLa
 TDGam is being developed along side a larger Touch Designer VFX Pipeline management API: MagLa (Magnetic-Lab Production API).
@@ -120,8 +115,6 @@ Main goals of Magla:
 - Ingesting assets and data from external sources like 3rd-party VFX vendors.
 
 ## Getting Started
-
-<hr>
 
 ### Prerequisites
 
@@ -162,8 +155,6 @@ to pull the third-party dependencies included as submodules:
 - scandir
 - smmap
 
-<hr>
-
 #### Start a test MagLa environment.
 TDGam is intended to be managed by the MagLa pipeline, which would handle injecting the required process customizations each time Touch Designer is launched. To simulate this, a start.py script is included which injects the environment with required environment variables and appends to the PYTHONPATH.
 
@@ -173,9 +164,6 @@ Navigate to the root TDGam repo and run:
 ```
 python start.py
 ```
-
-<hr>
-
 
 ## Authors
 
