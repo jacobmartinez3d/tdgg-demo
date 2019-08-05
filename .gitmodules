@@ -1,0 +1,15 @@
+[submodule "lib/third_party/scandir"]
+	path = lib/third_party/scandir
+	url = https://github.com/benhoyt/scandir.git
+[submodule "lib/third_party/GitPython"]
+	path = lib/third_party/GitPython
+	url = https://github.com/gitpython-developers/GitPython.git
+[submodule "lib/third_party/gitdb"]
+	path = lib/third_party/gitdb
+	url = https://github.com/gitpython-developers/gitdb.git
+[submodule "lib/third_party/smmap"]
+	path = lib/third_party/smmap
+	url = https://github.com/gitpython-developers/smmap.git
+[submodule "lib/third_party/pyyaml"]
+	path = lib/third_party/pyyaml
+	url = https://github.com/yaml/pyyaml.git

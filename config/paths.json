@@ -1,0 +1,37 @@
+{
+   "tdgam": "/ui/dialogs/mainmenu/TDGam",
+   "tdgam_repo": {
+      "windows": "e:\\projects\\TDGam",
+      "linux": "/mnt/e/projects/TDGam"
+   },
+   "controls": "<tdgam>/controls",
+   "component_ui": "<controls>/TDGamComponent_ui",
+   "touchdesigner": {
+      "windows": "c:\\apps\\Derivative\\touchdesigner\\64-2019-15840\\bin\\TouchDesigner099.exe",
+      "linux": "/mnt/c/apps/Derivative/touchdesigner/64-2019-15840/bin/TouchDesigner099.exe"
+   },
+   "example_toe": {
+      "windows": "e:\\SANDBOX\\tdgam_proj\\example.toe",
+      "linux": "/mnt/e/SANDBOX/tdgam_proj/example.toe"
+   },
+   "__init__": "<tdgam_repo>\\__init__.py",
+   "project": "<tdgam_repo>\\lib\\project.py",
+   "project_ui": "<tdgam_repo>\\lib\\touchdesigner_ui\\project_ui.py",
+   "component": "<tdgam_repo>\\lib\\component.py",
+   "component_ui": "<tdgam_repo>\\lib\\touchdesigner_ui\\component_ui.py",
+   "create_component": "<tdgam_repo>\\lib\\touchdesigner_ui\\create_component.py",
+   "set_project_preferences": "<tdgam_repo>\\lib\\touchdesigner_ui\\set_project_preferences.py",
+   "menuhandler": "<tdgam_repo>\\lib\\touchdesigner_ui\\menuhandler.py",
+   "tabhandler": "<tdgam_repo>\\lib\\touchdesigner_ui\\tabhandler.py",
+   "git_commit_component": "<tdgam_repo>\\lib\\touchdesigner_ui\\git_commit_component.py",
+   "git_add": "<tdgam_repo>\\lib\\touchdesigner_ui\\git_add.py",
+   "git_add_remote_component": "<tdgam_repo>\\lib\\touchdesigner_ui\\git_add_remote_component.py",
+   "user_components": "/ui/dialogs/mainmenu/TDGam/controls/user_components",
+   "placeholder_template": "/ui/dialogs/mainmenu/TDGam/controls/TDGamComponent_ui",
+   "placeholder_tox": {
+      "windows": "E:\\projects\\TDGam\\tox\\TDGamComponent.tox",
+      "linux": "/mnt/e/projects/TDGam/tox/TDGamComponent.tox"
+   },
+   "remote_name": "<tdgam>/controls/confirm/null_name",
+   "remote_url": "<tdgam>/controls/confirm/remote_url"
+}

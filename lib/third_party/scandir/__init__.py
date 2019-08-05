@@ -1,0 +1,2 @@
+"""TDGam"""
+from . import scandir

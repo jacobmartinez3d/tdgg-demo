@@ -1,0 +1,6 @@
+__pycache__/*
+node_modules/
+npm-debug.log
+firefox_root/
+dummy_project.toe
+*.pyc
