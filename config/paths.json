@@ -1,3 +1,9 @@
+/*
+	Each entry can either be a single string-path, or a dict with 'windows',
+	'linux' keys and string-path values.
+
+	Notice key names do not contain the token identifiers '<', '>'.
+*/
 {
    "tdgam": "/ui/dialogs/mainmenu/TDGam",
    "tdgam_repo": {
