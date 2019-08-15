@@ -8,7 +8,7 @@
 Built with [Touch Designer](https://www.derivative.ca/), [GitPython](https://github.com/gitpython-developers/GitPython).
 
 
-`TDGam` is intended to address the need for proper asset management on a large scale in `Touch Designer`. `TDGam` consists of user-created "components" from selections of `[ops](https://docs.derivative.ca/OP_Class)` in `Touch Designer`.
+`TDGam` is intended to address the need for proper asset management on a large scale in `Touch Designer`. `TDGam` consists of user-created "components" from selections of [ops](https://docs.derivative.ca/OP_Class) in `Touch Designer`.
 
 <p align="center">
   <img src="media/component.gif">
@@ -25,7 +25,7 @@ A `TDGam` Project consists of:
 - Project (set to a folder with a project git repo)
 - Components (saved in subfolders of the Project with component `git` repos)
 
-### Example TDGam Project hierarchy:
+### Example `TDGam` Project hierarchy:
 
     Project-directory
         |_(project .git repo)
@@ -36,14 +36,14 @@ A `TDGam` Project consists of:
             |_component-repo-folder
                 |_(component .git submodule)
 
-### The TDGam Component:
+### The `TDGam` Component:
 
-#### Git Log
+#### `Git` Log
 View the `git` log history for current branch.
 
 <img src="media/git_log.png">
 
-#### Git Branches
+#### `Git` Branches
 View the branches for the current component's repo as well as perform checkout/push/pull operations.
 
 <img src="media/git_branches.png">
@@ -53,13 +53,13 @@ View the current status of the staging area and manage tracked/untracked files.
 
 <img src="media/staging_area.png">
 
-#### Ops
+#### `Ops`
 View a list of the original `ops` making up this component(future `op`-management features to go here).
 
 <img src="media/ops.png">
 
 
-#### TDGam-menu
+#### `TDGam`-menu
 - **[Stash]** Save all contained `ops'` pars, then destroy all `ops`.
 - **[Rebuild]** Rebuild original selection from Component's `.json` data.
 - **[Dock]** Dock `ops` to the placeholder.
@@ -73,7 +73,7 @@ View a list of the original `ops` making up this component(future `op`-managemen
 <img src="media/tdgam_menu.png">
 
 
-#### Git-menu
+#### `Git`-menu
 - **[Commit]** Commit current staging area.
 - **[Reset]** Reset the current staging area.
 - **[Push]** Push current staging area to remote repo.
@@ -81,26 +81,26 @@ View a list of the original `ops` making up this component(future `op`-managemen
 - **[Change Branch]** Checkout target branch.
 - **[New Branch]** Create new branch from current staging area.
 - **[View Log]** Retrieve the `git` log for current branch.
-- **[Set Custom Remote]** Open a confirm dialogue to add a new `git` repo `URL` to current component.
+- **[Set Custom Remote]** Open a confirm dialogue to add a new `git` repo `url` to current component.
 
 <img src="media/git_menu.png">
 
 
-#### MagLa Path tokening system
+#### `MagLa` Path tokening system
 Included with this project is a slightly modified version of `MagLa`'s path token system. The goal of using path tokens is for compatibility across platforms, primarily between Linux-Windows. Simultaneous [Windows Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/faq) terminal and native CMD prompt will also be supported, so the TD's can have their Linux:).
 
 A token can be described as:
 ```
 <token_name>
 ```
-In this form, `Path` will look for a matching key in ./config/paths.json. Currently this file must be edited manually in order to develop in your specific environment.
+In this form, `Path` will look for a matching key in ./config/paths.json. Tokens can be made up of other tokens and combined together to create more complex paths. Currently this file must be edited manually in order to develop in your specific environment.
 
 The `Path` module is located at:
 ```
 ./lib/maglapath.py
 ```
 
-#### TDGam + MagLa
+#### `TDGam` + `MagLa`
 `TDGam` is being developed along side a larger Touch Designer VFX Pipeline management API: `MagLa`.
 
 <p>
@@ -120,13 +120,13 @@ Main goals of `Magla`:
 
 * [Install Touch Designer](https://www.derivative.ca/099/Downloads/)
 
-#### CLone this repo, and copy to the Touch Designer site-packages folder:
+#### Clone this repo, and copy to the `Touch Designer` site-packages folder:
 ```
 <touch designer install folder>\bin\Lib\site-packages\tdgam
 ```
 This should expose the `tdgam` module for importing within Touch Designer. For development it is recommended to instead use a hardlink or symlink to a local development directory.
 
-#### Back up and replace default `menu.tox`
+#### Back up and replace default `mainmenu.tox`
 `TDGam` is implemented within Touch Designer as a modification to the main UI. In order to make this modification you must first back up the original `mainmenu.tox` and then copy the one included with this repo. **Please be cautious with this step and don't forget to back up your existing `mainmenu.tox.`**
 
 1. rename the `mainmenu.tox`:
@@ -154,7 +154,7 @@ to pull the third-party dependencies included as submodules:
 - [scandir](https://github.com/benhoyt/scandir)
 - [smmap](https://github.com/gitpython-developers/smmap)
 
-#### Start a test MagLa environment.
+#### Start a test `MagLa` environment.
 `TDGam` is intended to be managed by the `MagLa` pipeline, which would handle injecting the required process customizations each time Touch Designer is launched. To simulate this, a `start.py` script is included which injects the Touch Designer process with required environment variables and appends to the `PYTHONPATH`.
 
 Because this project is still in development the `paths.json` will have to be manually adjusted to your environment.
