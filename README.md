@@ -1,4 +1,4 @@
-# Touch Designer Git Asset Manager
+# Touch Designer Git Groups
 ![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)
 
 - Turn a selection of `Touch Designer` ops into a tracked component
